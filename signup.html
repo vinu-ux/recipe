@@ -12,24 +12,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
 </head>
 
-<body>
+<body class="bg-cover" style="background-image: url('./assets/image/bg.jpg')">
   <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
   <div class="page page-center">
     <div class="container container-tight py-4">
      
-      <form class="card card-md" action="./" method="get" autocomplete="off" novalidate="">
+      <form class="card card-md border-0" style="background: rgba(0, 0, 0, 0.4)" action="./" method="get" autocomplete="off" novalidate="">
         <div class="card-body">
-          <h2 class="card-title text-center mb-4">Create new account</h2>
+          <h2 class="card-title text-center mb-4 text-light">Create new account</h2>
           <div class="mb-3">
-            <label class="form-label">User Name</label>
+            <label class="form-label text-light">User Name</label>
             <input type="text" class="form-control" placeholder="Enter name">
           </div>
           <div class="mb-3">
-            <label class="form-label">Email address</label>
+            <label class="form-label text-light">Email address</label>
             <input type="email" class="form-control" placeholder="Enter email">
           </div>
           <div class="mb-3">
-            <label class="form-label">Password</label>
+            <label class="form-label text-light">Password</label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control" placeholder="Password" autocomplete="off">
               <span class="input-group-text">
@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <label class="form-label">Confirm Password</label>
+            <label class="form-label text-light">Confirm Password</label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control" placeholder="Password" autocomplete="off">
               <span class="input-group-text">
@@ -56,8 +56,8 @@
           </div>
         </div>
       </form>
-      <div class="text-center text-secondary mt-3">
-        Already have account? <a href="./sign-in.html" tabindex="-1">Sign in</a>
+      <div class="text-center text-secondary mt-3 text-light">
+        Already have account? <a class="text-azure" href="./sign-in.html" tabindex="-1">Sign in</a>
       </div>
     </div>
   </div>

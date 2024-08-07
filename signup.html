@@ -22,19 +22,22 @@
         <div class="card-body p-4 m-2">
           <h2 class="card-title text-center mb-4 ">Create new account</h2>
           <div class="mb-2">
-            <label class="form-label ">User Name</label>
+            <label class="form-label required">User Name</label>
             <input type="text" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter name">
+            <div class="invalid-feedback">Username Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label ">Email address</label>
+            <label class="form-label required">Email address</label>
             <input type="email" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter email">
+            <div class="invalid-feedback">Email Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label ">Phone</label>
+            <label class="form-label required">Phone</label>
             <input type="number" class="form-control rounded-3 bg-secondary-lt" placeholder="Enter Phone">
+            <div class="invalid-feedback">Phone Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label ">Password</label>
+            <label class="form-label required">Password</label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Password" autocomplete="off">
               <span class="input-group-text rounded-end-3 ps-2 bg-secondary-lt">
@@ -43,9 +46,10 @@
                 </a>
               </span>
             </div>
+            <div class="invalid-feedback">Password Required</div>
           </div>
           <div class="mb-2">
-            <label class="form-label ">Confirm Password</label>
+            <label class="form-label required">Confirm Password</label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Password" autocomplete="off">
               <span class="input-group-text rounded-end-3 ps-2 bg-secondary-lt">
@@ -54,6 +58,7 @@
                 </a>
               </span>
             </div>
+            <div class="invalid-feedback">Confirm Password Required</div>
           </div>
          
           <div class="form-footer">

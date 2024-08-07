@@ -15,6 +15,8 @@
 
 <body >
   <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+  <!-- Error message show on apply this class 'is-invalid' on input  class -->
+  
   <div class="page page-center">
     <div class="container container-tight py-4">
       <div class="card shadow-lg border-0" style="border-radius: 8% ;">
@@ -24,12 +26,13 @@
 
           <form action="./" method="get" autocomplete="off" novalidate="">
             <div class="mb-3">
-              <label class="form-label custom-cursor-default-hover ">Username</label>
-              <input type="text" class="form-control bg-secondary-lt rounded-3" placeholder="Enter Username" autocomplete="off"
+              <label class="form-label custom-cursor-default-hover required">Username</label>
+              <input type="text" class="form-control bg-secondary-lt rounded-3 is-invalid" placeholder="Enter Username" autocomplete="off"
                 data-has-listeners="true">
+                <div class="invalid-feedback">Username Required</div>
             </div>
             <div class="mb-2">
-              <label class="form-label ">
+              <label class="form-label required">
                 Password
                 
               </label>
@@ -50,6 +53,7 @@
                   </a>
                 </span>
               </div>
+              <div class="invalid-feedback">Password Required</div>
             </div>
          
             <div class="form-footer">

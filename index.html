@@ -10,30 +10,33 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="bg-cover" style="background-image: url('./assets/image/bg.jpg')">
+<body >
   <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
   <div class="page page-center">
     <div class="container container-tight py-4">
-      <div class="card card-md border-0" style="background: rgba(0, 0, 0, 0.4)">
-        <div class="card-body">
-          <h2 class="h2 text-center mb-4 text-light">Login</h2>
+      <div class="card shadow-lg border-0" style="border-radius: 8% ;">
+      
+        <div class="card-body p-4 m-2">
+          <h2 class="h2 text-center d-flex justify-content-center">Login</h2>
+
           <form action="./" method="get" autocomplete="off" novalidate="">
             <div class="mb-3">
-              <label class="form-label custom-cursor-default-hover text-light">Username</label>
-              <input type="text" class="form-control" placeholder="Enter Username" autocomplete="off"
+              <label class="form-label custom-cursor-default-hover ">Username</label>
+              <input type="text" class="form-control bg-secondary-lt rounded-3" placeholder="Enter Username" autocomplete="off"
                 data-has-listeners="true">
             </div>
             <div class="mb-2">
-              <label class="form-label text-light">
+              <label class="form-label ">
                 Password
                 
               </label>
               <div class="input-group input-group-flat">
-                <input type="password" class="form-control" placeholder="Your password" autocomplete="off"
+                <input type="password" class="form-control bg-secondary-lt rounded-start-3" placeholder="Your password" autocomplete="off"
                   data-has-listeners="true">
-                <span class="input-group-text">
+                <span class="input-group-text bg-secondary-lt ps-2 rounded-end-3">
                   <a href="#" class="link-secondary" data-bs-toggle="tooltip" aria-label="Show password"
                     data-bs-original-title="Show password"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -50,15 +53,16 @@
             </div>
          
             <div class="form-footer">
-              <button type="submit" class="btn btn-primary w-100">Sign in</button>
+              <button type="submit" class="btn btn-success w-100 rounded-3">Sign in</button>
             </div>
           </form>
+          <div class="text-center text-secondary mt-3 ">
+            Don't have account yet? <a class="text-success fw-bold" href="./sign-up.html" tabindex="-1">Sign up</a>
+          </div>
         </div>
+        
+      </div>
       
-      </div>
-      <div class="text-center text-secondary mt-3 text-light">
-        Don't have account yet? <a class="text-azure" href="./sign-up.html" tabindex="-1">Sign up</a>
-      </div>
     </div>
   </div>
 
